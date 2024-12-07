@@ -4,18 +4,6 @@ body {
   font-style: normal;
 }
 
-.login-container {
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  min-height: 100vh; /* Ensure container takes full viewport height */
-
-}
-
 /* Bordered form */
 form {
   border: 3px solid #f1f1f1;
@@ -33,8 +21,8 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
-  color: black;
+  background-color: #000000;
+  color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
