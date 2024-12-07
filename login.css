@@ -1,12 +1,26 @@
+/* General body styles */
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4; /* Set background color */
 }
 
-/* Bordered form */
+/* Bordered form container */
 form {
   border: 3px solid #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px; /* Ensure the form doesn't exceed 400px width */
+  box-sizing: border-box;
 }
 
 /* Full-width inputs */
@@ -17,6 +31,7 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  border-radius: 4px; /* Rounded corners for inputs */
 }
 
 /* Set a style for all buttons */
@@ -28,9 +43,10 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
+  border-radius: 4px; /* Rounded corners for button */
 }
 
-/* Add a hover effect for buttons */
+/* Hover effect for buttons */
 button:hover {
   opacity: 0.8;
 }
@@ -40,6 +56,7 @@ button:hover {
   width: auto;
   padding: 10px 18px;
   background-color: #f44336;
+  border-radius: 4px; /* Rounded corners for cancel button */
 }
 
 /* Center the avatar image inside this container */
@@ -52,6 +69,7 @@ button:hover {
 img.avatar {
   width: 40%;
   border-radius: 50%;
+  max-width: 120px; /* Maximum width for the avatar */
 }
 
 /* Add padding to containers */
@@ -59,20 +77,35 @@ img.avatar {
   padding: 16px;
 }
 
-/* The "Forgot password" text */
+/* "Forgot password" text */
 span.psw {
   float: right;
   padding-top: 16px;
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    width: 90%; /* Form will take 90% of the width on small screens */
+  }
+
+  input[type=text], input[type=password], button {
+    padding: 10px;
+    font-size: 16px;
+  }
+
   span.psw {
     display: block;
     float: none;
+    text-align: center; /* Center the "Forgot password" text */
   }
+  
   .cancelbtn {
-    width: 100%;
+    width: 100%; /* Cancel button takes full width on small screens */
   }
 }
-/* USED https://www.w3schools.com/howto/howto_css_login_form.asp FOR HELP */
+
