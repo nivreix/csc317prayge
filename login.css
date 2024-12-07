@@ -3,6 +3,19 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.login-container {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 100vh; /* Ensure container takes full viewport height */
+
+}
+
 /* Bordered form */
 form {
   border: 3px solid #f1f1f1;
