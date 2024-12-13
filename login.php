@@ -16,11 +16,11 @@ $uname = validate($_POST['uname']);
 $pass = validate($_POST['password']);
 
 if(empty($uname)){
-    header ("Location: index.php?erro=User Name is required");
+    header ("Location: index.php?error=User Name is required");
     exit();
 }
 else if(empty($pass)){
-    header("Location: index.php?erro=Password is required");
+    header("Location: index.php?error=Password is required");
     exit();
 }
 
