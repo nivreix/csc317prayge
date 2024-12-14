@@ -132,7 +132,7 @@ span.psw {
 /* Show/Hide button */
 #toggle-password {
   position: absolute;
-  right: 10px; /* Distance from the right edge of the container */
+  right: 1px; /* Distance from the right edge of the container */
   top: 50%; /* Vertically center the button */
   transform: translateY(-50%);
   padding: 2px 8px; /* Smaller button */
