@@ -137,7 +137,7 @@ span.psw {
   top: 50%;
   width: 30px;  /* Adjust the width of the button */
   height: 30px; /* Adjust the height of the button */
-  transform: translateY(-50%); /* Fix alignment vertically */
+  transform: translateY(-75%); /* Fix alignment vertically */
   font-size: 16px;  /* Make the text a bit bigger */
   background-color: #000000; /* Button background color */
   color: white;
