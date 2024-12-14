@@ -134,8 +134,8 @@ span.psw {
   position: absolute;
   right: 830px; /* Distance from the right edge */
   top: 47.4%;
-          width: 50px;
-        height: 25px;
+  width: 50px;
+  height: 25px;
   transform: translateY(-90%);
   padding: 2px 7px;
   font-size: 12px;
@@ -145,7 +145,7 @@ span.psw {
   border-radius: 4px;
   cursor: pointer;
 }
-}
+
 
 /* Adjust hover effects */
 #toggle-password:hover {
