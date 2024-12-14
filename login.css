@@ -109,3 +109,15 @@ span.psw {
   }
 }
 
+#toggle-password {
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #007BFF; /* Add your preferred color */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
