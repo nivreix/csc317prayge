@@ -1,55 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="login.css"> <!-- Include your existing CSS -->
-</head>
-<body>
-    <form action="login.php" method="post">
-        <div class="imgcontainer">
-            <img src="avatar.png" alt="Avatar" class="avatar"> <!-- Optional Avatar -->
-        </div>
+<form action="login.php" method="post">
+  <header> 
+    <h1>Crado</h1>
+    <h2>Log In or Register</h2>
+  </header>
+  <link rel="stylesheet" href="login.css">
 
-        <div class="container">
-            <label for="uname"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="uname" required>
+  <div class="imgcontainer"></div>
 
-            <label for="psw"><b>Password</b></label>
-            <div class="password-container">
-              <input type="password" placeholder="Enter Password" name="psw" id="password" required>
-              <button type="button" id="toggle-password">Show</button>
-          </div>
-          
+  <div class="container">
+    <label for="uname"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="uname" required>
 
-            <button type="submit">Login</button>
-            <button type="submit">Register</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-        </div>
+    <label for="psw"><b>Password</b></label>
+    <div style="position: relative;">
+      <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+      <button type="button" id="toggle-password" style="position: absolute; right: 5px; top: 5px;">Show</button>
+    </div>
 
-        <div class="container" style="background-color:#f1f1f1">
-            <a href="index.html">
-                <button type="button" class="cancelbtn">Cancel</button>
-            </a>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-    </form>
+    <button type="submit">Login</button>
+    <button type="submit">Register</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
 
-    <script>
-        // JavaScript for toggling password visibility
-        const togglePasswordButton = document.getElementById('toggle-password');
-        const passwordField = document.getElementById('password');
+  <div class="container" style="background-color:#f1f1f1">
+    <a href="index.html">
+      <button type="button" class="cancelbtn">Cancel</button>
+    </a>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
 
-        togglePasswordButton.addEventListener('click', () => {
-            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
-            passwordField.setAttribute('type', type);
+<script>
+  // JavaScript for toggling password visibility
+  const togglePasswordButton = document.getElementById('toggle-password');
+  const passwordField = document.getElementById('password');
 
-            // Change button text
-            togglePasswordButton.textContent = type === 'password' ? 'Show' : 'Hide';
-        });
-    </script>
-</body>
-</html>
+  togglePasswordButton.addEventListener('click', () => {
+      const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordField.setAttribute('type', type);
+
+      // Change button text
+      togglePasswordButton.textContent = type === 'password' ? 'Show' : 'Hide';
+  });
+</script>
