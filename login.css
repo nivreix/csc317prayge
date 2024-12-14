@@ -153,3 +153,36 @@ span.psw {
 #toggle-password:hover {
   background-color: #0056b3; /* Darker blue on hover */
 }
+/* Set a style for all buttons */
+button {
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px; /* Rounded corners for button */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Show password button styling */
+#toggle-password {
+  background-color: #000000; /* Button background color */
+  color: white;
+  padding: 14px 20px; /* Same padding as the login button */
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Same width as the login button */
+  border-radius: 4px;
+}
+
+/* Hover effect for show password button */
+#toggle-password:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
