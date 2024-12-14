@@ -112,6 +112,7 @@ span.psw {
 
 /* Container for password input and toggle button */
 /* Container for password input and toggle button */
+/* Container for password input and toggle button */
 .password-container {
   position: relative;
   width: 100%;
@@ -134,18 +135,19 @@ span.psw {
   position: absolute;
   right: 10px; /* Distance from the right edge */
   top: 50%;
-  width: 50px;
-  height: 25px;
-  transform: translateY(-90%);
-  padding: 2px 7px;
-  font-size: 12px;
+  width: 30px;  /* Adjust the width of the button */
+  height: 30px; /* Adjust the height of the button */
+  transform: translateY(-50%); /* Fix alignment vertically */
+  font-size: 16px;  /* Make the text a bit bigger */
   background-color: #000000; /* Button background color */
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 /* Adjust hover effects */
 #toggle-password:hover {
